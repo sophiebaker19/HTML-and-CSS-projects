@@ -1,12 +1,22 @@
 # HTML-and-CSS-projects
 Repository for my HTML and CSS Tech Academy Projects
 <br> <strong>Some sample websites I've created.</strong>
+<br> -Dog-video.html, dog.html, assingment.html
+<br> -Basic HTML,CSS and Javascript
 <br> -Mugs Website
 <br> -Cinema Website
 <br> -Travel Website
 <br> -CSS Styling Effects
 <br> -Challenges-5
-<br> -Basic HTML,CSS and Javascript
+
+<strong>Dog-video.html, dog.html, assingment.html</strong>
+<br> These were the first tasks I did when I started this course, these were done with
+<br> basic HTML without any CSS or JavaScript. It included linking the pages together, as well as 
+<br> putting in basic paragraphs and headings, and including images and video links.
+
+<strong>Basic HTML, CSS and JavaScript</strong>
+<br> These task were done at the start of the course, they asked me to look and learn at HTML, CSS and JavaScript 
+<br> to develop an understanding of the basic tags and properties these languages have.
 
 <strong>Mugs Website</strong>
 <br> This website is made for a specialist Mug company, it contains a nav bar, 
@@ -42,6 +52,3 @@ Repository for my HTML and CSS Tech Academy Projects
 <br> Challenge 10 is similar to Challenge 4, I positioned text over an embedded video which also plays on mute and loop.
 <br> The final challenge was a small media query challenge. When the screen is resized the text changes colour.
 
-<strong>Basic HTML, CSS and JavaScript</strong>
-<br> These task were done at the start of the course, they asked me to look and learn at HTML, CSS and JavaScript 
-<br> to develop an understanding of the basic tags and properties these languages have.
