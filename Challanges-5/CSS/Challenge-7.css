@@ -1,0 +1,13 @@
+p {
+    color: blueviolet;
+}
+
+p2 {
+    display: none;
+}
+
+p:hover + p2 {
+    display: inline-block;
+    color: blueviolet;
+    background-color: yellow;
+}

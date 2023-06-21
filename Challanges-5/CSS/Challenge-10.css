@@ -1,0 +1,17 @@
+.video {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    color: rgb(24, 243, 43);
+    font-weight: bold;
+    font-size: 2rem;
+}

@@ -43,6 +43,11 @@ nav {
     color: black;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 /*GALLERY STYLES*/
 .photo {
     position: relative;

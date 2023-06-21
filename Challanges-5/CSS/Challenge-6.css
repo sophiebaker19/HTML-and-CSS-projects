@@ -1,0 +1,25 @@
+.col1 {
+    color: rgb(0, 113, 11);
+    height: 500px;
+    width: 49%;
+    border: 2px;
+    border-color: grey;
+    border-style: double;
+	float:left;
+}
+
+.col2 {
+    color: blueviolet;
+    height: 500px;
+    width: 49%;
+    border: 2px;
+    border-color: grey;
+    border-style: double;
+	float: right;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}

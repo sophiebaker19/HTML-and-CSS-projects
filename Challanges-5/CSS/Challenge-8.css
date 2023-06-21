@@ -1,0 +1,47 @@
+.photo {
+    position: relative;
+    height: 450px;
+    width: 340px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 4px;
+    border-color: rgb(255, 237, 154);
+    border-radius: 3px;
+    border-style: solid;
+}
+
+img {
+    object-fit: fill;
+    height: inherit;
+    width: inherit;
+}
+
+.photo .overlay {
+   position: absolute;
+   background-color: #969696; 
+   overflow: hidden;
+   height: inherit;
+   width: inherit;
+   top: inherit;
+   left: inherit;
+   right: inherit;
+   bottom: inherit;
+   opacity: 0;
+
+}
+
+.photo:hover .overlay{
+    opacity: 0.9;
+    object-fit: fill;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+p{
+    text-align: center;
+    color: rgb(132, 0, 255);
+    padding: 14px 16px;
+    font-size: 3rem;
+}

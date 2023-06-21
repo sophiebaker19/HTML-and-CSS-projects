@@ -1,0 +1,15 @@
+.photo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.text-over {
+    position: absolute;
+    top: 45%;
+    left: 43%;
+}
