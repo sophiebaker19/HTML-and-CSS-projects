@@ -38,117 +38,97 @@
 		<section id="gall">
 			<div class="container">
 			<h1>Gallery</h1>
+
 					<div class="flex-container">
 					
 						<!--PHOTO CONTAINER 1-->
 						<div class="photo-container">
 							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_1.jfif" alt="Queensland Beach">
-								<div class="photo-overlay">
-								<h3>Arlie Beach</h3>
-								<p>Beach in Queensland, Austrailia</p>
-								</div>
+							<img src="./Images/Thumb/Thumbnail_1.jfif" alt="Queensland Beach" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							</div>
 						</div>
 						<!--END PHOTO CONTAINER 1-->
 						
-						<!--PHOTO CONTAINER 2-->
-						<div class="photo-container">
-							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_2.jfif" alt="Beach in Jamaica">
-								<div class="photo-overlay">
-								<h3>Mammee Bay Beach</h3>
-								<p>Ocho Rios Area, Jamaica</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO CONTAINER 2-->
-						
-						<!--PHOTO CONTAINER 3-->
-						<div class="photo-container">
-							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_3.jfif" alt="Beach in Mexico">
-								<div class="photo-overlay">
-								<h3>Playa del Amor, Nayarit</h3>
-								<p>Part of the Marietas Islands</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO CONTAINER 3-->
-						
-						<!--PHOTO CONTAINER 4-->
-						<div class="photo-container">
-							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_4.jfif" alt="City of Budapest">
-								<div class="photo-overlay">
-								<h3>City of Budapest</h3>
-								<p>Chain Bridge and Hungarian Parliament on Danube River</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO CONTAINER 4-->
-						
+												
 						<!--PHOTO CONTAINER 5-->
 						<div class="photo-container">
 							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_5.jfif" alt="City of Rome">
-								<div class="photo-overlay">
-								<h3>City of Rome</h3>
-								<p>From the Top of Pincian Hill</p>
-								</div>
+							<img src="./Images/Thumb/Thumbnail_5.jfif" alt="City of Rome" onclick="openModal();currentSlide(2)" class="hover-shadow">
 							</div>
 						</div>
 						<!--END PHOTO CONTAINER 5-->
 						
-						<!--PHOTO CONTAINER 6-->
-						<div class="photo-container">
-							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_6.jfif" alt="City of New York">
-								<div class="photo-overlay">
-								<h3>City of New York</h3>
-								<p>Does anymore need to be said...</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO CONTAINER 6-->
-						
 						<!--PHOTO CONTAINER 7-->
 						<div class="photo-container">
 							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_7.jfif" alt="City of Tokyo">
-								<div class="photo-overlay">
-								<h3>City of Tokyo</h3>
-								<p>From the Tokyo Tower to Mount Fuji</p>
-								</div>
+							<img src="./Images/Thumb/Thumbnail_7.jfif" alt="City of Tokyo" onclick="openModal();currentSlide(3)" class="hover-shadow">
 							</div>
 						</div>
 						<!--END PHOTO CONTAINER 7-->
-						
-						<!--PHOTO CONTAINER 8-->
-						<div class="photo-container">
-							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_8.jfif" alt="Waterfall in Zambia">
-								<div class="photo-overlay">
-								<h3>Victoria Falls in Zambia</h3>
-								<p>Known as the Devils Swimming Pool.</p>
-								</div>
-							</div>
-						</div>
-						<!--END PHOTO CONTAINER 8-->
-						
+											
 						<!--PHOTO CONTAINER 9-->
 						<div class="photo-container">
 							<div class="photo">
-							<img src="./Images/Thumb/Thumbnail_9.jfif" alt="China Mountains">
-								<div class="photo-overlay">
-								<h3>Lijiang landscape Mountains</h3>
-								<p>Tibet, China</p>
-								</div>
+							<img src="./Images/Thumb/Thumbnail_9.jfif" alt="China Mountains" onclick="openModal();currentSlide(4)" class="hover-shadow">
 							</div>
 						</div>
-						<!--END PHOTO CONTAINER 9-->
-					
 					</div>
+
+				<!--the lightbox-->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div>
+
+						<div class="mySlides">
+							<div class="numbertext">1/4</div>
+							<img src="./Images/Thumb/Thumbnail_1.jfif" style="width: 50%; margin-left: 25%;">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2/4</div>
+							<img src="./Images/Thumb/Thumbnail_5.jfif" style="width: 50%; margin-left: 25%;">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3/4</div>
+							<img src="./Images/Thumb/Thumbnail_7.jfif" style="width: 50%;  margin-left: 25%;">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4/4</div>
+							<img src="./Images/Thumb/thumbnail_9.jfif" style="width: 50%;  margin-left: 25%;">
+						</div>
+
+						<!--next and prev controls-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!--caption text-->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<!--thumbnail image controls-->
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/Thumbnail_1.jfif" onclick="currentSlide(1)" alt="Queensland Beach">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/Thumbnail_5.jfif" onclick="currentSlide(2)" alt="City of Rome">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/Thumbnail_7.jfif" onclick="currentSlide(3)" alt="City of Tokyo">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./Images/Thumb/thumbnail_9.jfif" onclick="currentSlide(4)" alt="China Mountains">
+						</div>
+					</div>
+				</div>
+
+				<script src="./JS/one-page-website.js"></script>
+
 			</div>
 		</section>
 		<!--END GALLERY-->
